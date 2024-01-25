@@ -1,1 +1,186 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --blue-1: #3c429e;
+  --blue-2: #4c52ad;
+  --yellow-1: #fac742;
+  --white-: #fff;
+  --grey-1: #ededed;
+  --shadow-dark: rgba(0, 0, 0, 0.3);
+  --shadow-light: rgba(255, 255, 255, 0.1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--blue-1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 400px;
+  height: 80vh;
+  background-color: var(--blue-2);
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px var(--shadow-dark);
+}
+
+.up-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.down-data {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+}
+
+.up-data img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.weather {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: var(--shadow-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.location {
+  color: var(--white-);
+  text-align: center;
+  font-size: 1.2em;
+}
+
+.temperature {
+  color: var(--white-);
+  font-size: 4em;
+  text-align: center;
+  font-weight: 900;
+}
+
+.info-data {
+  color: var(--white-);
+}
+
+.info-container {
+  flex: 1;
+  background-color: var(--shadow-light);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-top: 1em;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+}
+
+.info-block {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-block img {
+  width: 3em;
+}
+
+.info-block span {
+  color: var(--white-);
+  font-size: 0.8rem;
+}
+
+.info-block-value {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: var(--white-);
+}
+
+.searchbox-wrap {
+  display: flex;
+  width: 410px;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.searchbox-wrap input {
+  flex: 1;
+  padding: 30px 20px;
+  font-size: 1.1em;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  box-shadow: none;
+  border: none;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+}
+
+.searchbox-wrap button {
+  padding-right: 10px;
+  background-color: #fff;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 5px 4px 6px rgba(0, 0, 0, 0.19);
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.searchbox-wrap button span {
+  margin-left: 50px;
+  padding: 24px 45px;
+  font-size: 0.9em;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #fff;
+  background-color: #6b1cff;
+  border-radius: 20px;
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.19);
+}
+
+.searchbox-wrap button span:hover {
+  background-color: #9b68ed;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.19);
+}
