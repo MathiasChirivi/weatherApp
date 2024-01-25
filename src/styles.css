@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-  width: 400px;
+  width: 600px;
   height: 80vh;
   background-color: var(--blue-2);
   border-radius: 20px;
