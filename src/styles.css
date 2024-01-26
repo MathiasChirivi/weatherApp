@@ -199,6 +199,7 @@ body {
     justify-content: center;
     width: 50px;
     margin: 0 auto;
+    padding-bottom: 20px;
   }
 
   .searchbox-wrap input {
