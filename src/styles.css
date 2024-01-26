@@ -204,7 +204,7 @@ body {
 
   .searchbox-wrap input {
     flex: 1;
-    padding: 30px 2px;
+    padding: 30px 10px;
     font-size: 1.1em;
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
